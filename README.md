@@ -1,6 +1,8 @@
 was - wsva automation system
 
-# components
+# 1 components
+
+## 1.1 auth, assets etc.
 | name                                                       | function                                       | language |
 |------------------------------------------------------------|------------------------------------------------|----------|
 | [auth_service](https://github.com/wsva/auth_service)       | verify login, token                            | Go       |
@@ -9,7 +11,7 @@ was - wsva automation system
 | [generate_pki](https://github.com/wsva/generate_pki)       | generate ca and server certificates            | Go       |
 | [database_design](https://github.com/wsva/database_design) | tables, views and scripts                      | SQL      |
 
-## monitor
+## 1.2 monitor
 a monitoring system based on zabbix
 
 | name                                                              | function                        | language      |
@@ -18,7 +20,7 @@ a monitoring system based on zabbix
 | [monitor -> collector](https://github.com/wsva/monitor_collector) | collect metrics form agent      | Go            |
 | [monitor -> viewer](https://github.com/wsva/monitor_viewer)       | view monitor results in browser | Go            |
 
-### gather metrics (gm)
+### 1.2.1 gather metrics (gm)
 gather monitor metrics, called by zabbix agent
 
 | name                                                                   | function                                  | language |
@@ -32,7 +34,7 @@ gather monitor metrics, called by zabbix agent
 | [gm_port](https://github.com/wsva/gm_port)                             | check if the port is open (tcping)        | Go       |
 | [gm_web_service_soap](https://github.com/wsva/gm_web_service_soap)     | check if web service available (SOAP)     | Go       |
 
-# service ports
+# 2 service ports
 | service        | http port | https port |
 |----------------|-----------|------------|
 | auth_service   | 22001     | 33001      |
