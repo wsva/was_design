@@ -5,7 +5,7 @@ was - wsva automation system
 ## 1.1 auth, assets etc.
 | name                                                       | function                                       | language |
 |------------------------------------------------------------|------------------------------------------------|----------|
-| [oauth2_service](https://github.com/wsva/oauth2_service)   | verify login, token                            | Go       |
+| [auth_service](https://github.com/wsva/auth_service)       | verify login, token; provide OAuth2            | Go       |
 | [asset_service](https://github.com/wsva/asset_service)     | machines, passwords and deployments management | Go       |
 | [config_service](https://github.com/wsva/config_service)   | provide config to every machine                | Go       |
 | [generate_pki](https://github.com/wsva/generate_pki)       | generate ca and server certificates            | Go       |
@@ -37,6 +37,6 @@ gather monitor metrics, called by zabbix agent
 # 2 service ports
 | service        | http port | https port |
 |----------------|-----------|------------|
-| oauth2_service | 22001     | 33001      |
+| auth_service   | 22001     | 33001      |
 | asset_service  | 22002     | 33002      |
 | config_service | 22003     | 33003      |
